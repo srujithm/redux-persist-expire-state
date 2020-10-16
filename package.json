@@ -1,0 +1,23 @@
+{
+  "name": "redux-persist-expire-state",
+  "version": "1.0.0",
+  "description": "redux-persist transform to expire/reset reducer state after defined period of time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "redux",
+    "expire",
+    "state",
+    "redux-persist",
+    "redux-persist-expire-state",
+    "redux-persist-transform"
+  ],
+  "author": "srujithm",
+  "license": "MIT",
+  "dependencies": {
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0"
+  }
+}
