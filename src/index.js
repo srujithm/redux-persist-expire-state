@@ -26,7 +26,7 @@ const expireReduxState = (key, config) => {
     return createTransform(
         (inbound) => {
             inbound = inbound || {};
-            if (config.expireAfter && !outbound.hasOwnProperty(config.expireKey)) {
+            if (config.expireAfter && !inbound.hasOwnProperty(config.expireKey)) {
                 inbound = Object.assign({}, inbound, {
                     [config.expireKey] : new Date()
                 });
