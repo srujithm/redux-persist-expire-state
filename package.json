@@ -1,6 +1,6 @@
 {
   "name": "redux-persist-expire-state",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "redux-persist transform to expire/reset reducer state after defined period of time",
   "main": "src/index.js",
   "scripts": {

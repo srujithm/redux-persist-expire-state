@@ -35,7 +35,7 @@ const expireReduxState = (key, config) => {
         },
         (outbound) => {
             outbound = outbound || {};
-            if (config.expireAfter && !outbound.hasOwnProperty(config.expireKey)) {
+            if (config.expireAfter && outbound.hasOwnProperty(config.expireKey)) {
                 let stateAge = getUnixTime(outbound[config.expireKey]) + expireAfter;
                 let current = getUnixTime(new Date());
                 // if persisted state expired, set it to default state.

@@ -19,7 +19,7 @@ import { persistReducer, persistStore } from 'redux-persist';
 import expireReduxState from 'redux-persist-expire-state';
 
 const config = {
-  expireSeconds: 10 * 60 * 60, // Expiration time of 10 hours, defaults to null
+  expireAfter: 10 * 60 * 60, // Expiration time of 10 hours, defaults to null
   expireKey: 'persistedAt', // key to be used in the state, defaults to persistedTimestamp
   expireState: { error: null, data: []} // state to be used after persisted state expires, defaults to {}
 };
